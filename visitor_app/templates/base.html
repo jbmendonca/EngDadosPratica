@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}Visitor System{% endblock %}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        form { margin: 0 auto; max-width: 400px; }
+        label { display: block; margin-top: 10px; }
+        input, select { width: 100%; padding: 8px; }
+        button { margin-top: 15px; padding: 10px; }
+    </style>
+</head>
+<body>
+    {% if session.get('user') %}
+        <p>Bem-vindo {{ session.get('user') }} | <a href="{{ url_for('logout') }}">Sair</a></p>
+    {% endif %}
+    {% block content %}{% endblock %}
+</body>
+</html>
