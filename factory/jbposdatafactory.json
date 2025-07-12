@@ -1,0 +1,9 @@
+{
+	"name": "jbposdatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ae95382e-32f3-42c9-9ac3-959607f39f85",
+		"tenantId": "41a707c2-b589-486f-a312-4b30d3c0482a"
+	}
+}
